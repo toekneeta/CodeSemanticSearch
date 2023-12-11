@@ -16,10 +16,12 @@ To run the search engine:
 4) Open Jupyter Notebook (make sure you are using the created virtual Python environment)
 5) Run the code in the `elastic_search_engine.ipynb` file
 
-To evaluate the search engine (after running the code in the `elastic_search_engine.ipynb` file:
-1) `cd notebooks`: change to the correct directory with the evaluation script in it
+To evaluate the search engine (after running the code in the `elastic_search_engine.ipynb` file):
+1) `cd..`: go back a level in the directory
 2) `evaluation\relevanceeval.py evaluation\annotation_store.csv predictions\ltr_es_model_predictions.csv`: runs the evaluation script that outputs the NDCG score of the search engine on the annotated queries
 
-Within the `elastic_search.ipynb`, there are a few areas the user can modify code (view the commented out sections)
-- use a smaller subset of the data
-- create their own embeddings
+## Additional Notes
+- Within the `elastic_search.ipynb`, there are a few areas the user can modify code (view the commented out sections)
+   - use a smaller subset of the data
+   - create their own embeddings
+- The `code_search_engine.ipynb` is an older version of our attempt at the CodeSearchNet challenge that does not implement Elasticsearch
