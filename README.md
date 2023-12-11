@@ -5,7 +5,7 @@ The search engine uses ElasticSearch to store and search through the Python func
 
 *If using LTR and want to use pre-made embeddings, download here: https://drive.google.com/drive/folders/10DAVFMzN92u_Y9yQSr6EOKbubgRzHe1K?usp=sharing 
 
-To run the search engine (Windows):
+To run the search engine:
 1) Open the command prompt
 2) Install and open Docker Desktop 
 3) Run the following commands:
