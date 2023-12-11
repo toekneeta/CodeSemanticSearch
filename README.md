@@ -13,3 +13,19 @@ To run the search engine:
    - `docker run --rm -p 9200:9200 -p 9300:9300 -e "xpack.security.enabled=false" -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:8.7.0 ` : runs an ElasticSearch container through Docker
 4) Open JupyterNotebook locally
 5) Run through the code in the `elastic_search_engine.ipynb` file
+
+To run the search engine (Windows):
+1) Open the command prompt
+2) Install and open Docker Desktop 
+2) Run the following commands:
+   -  `python -m venv code_search_venv` : creates the virtual Python environment
+   -  `code_search_venv\Scripts\activate` : opens the created virtual environment
+   -  `pip install -r requirements.txt` : installs necessary dependencies
+   -  `docker run --rm -p 9200:9200 -p 9300:9300 -e "xpack.security.enabled=false" -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:8.7.0 ` : runs an ElasticSearch container through Docker
+3) Open Jupyter Notebook (make sure you are using the created virtual Python environment)
+4) Run the code in the `elastic_search_engine.ipynb` file
+
+
+Within the `elastic_search.ipynb`, there are a few areas the user can modify code (view the commented out sections)
+- use a smaller subset of the data
+- create their own embeddings
