@@ -3,6 +3,8 @@ A semantic search engine that takes in natural language queries and outputs Pyth
 
 The search engine uses ElasticSearch to store and search through the Python functions, its code, documentation, and other related attributes. Uses LambdaRank to re-rank the initial ElasticSearch results.
 
+*If using LTR and want to use pre-made embeddings, download here: https://drive.google.com/drive/folders/10DAVFMzN92u_Y9yQSr6EOKbubgRzHe1K?usp=sharing 
+
 To run the search engine:
 1) Open Ubuntu (or any other Unix-based terminal)
 2) Install Docker
@@ -25,6 +27,9 @@ To run the search engine (Windows):
 3) Open Jupyter Notebook (make sure you are using the created virtual Python environment)
 4) Run the code in the `elastic_search_engine.ipynb` file
 
+To evaluate:
+1) `cd notebooks`
+2) `evaluation\relevanceeval.py evaluation\annotation_store.csv predictions\ltr_es_model_predictions.csv`
 
 Within the `elastic_search.ipynb`, there are a few areas the user can modify code (view the commented out sections)
 - use a smaller subset of the data
